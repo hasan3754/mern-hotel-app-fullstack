@@ -13,7 +13,7 @@ router.put("/:id",verifyAdmin, updateRoom)
 router.put("avaibility/:id", updateRoomAvailability)
 
 //delete
-router.delete("/:id/:hotelid",verifyAdmin, deleteRoom)
+router.delete("/:id/:hotelId",verifyAdmin, deleteRoom)
 
 //get
 router.get("/:id", getRoom)

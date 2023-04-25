@@ -21,8 +21,8 @@ export const deleteUser = async (req, res, next) => {
 
 export const getUser = async (req, res, next) => {
     try {
-        const User = await User.findById(req.params.id)
-        res.status(200).json(User)
+        const Userr = await User.findById(req.params.id)
+        res.status(200).json(Userr)
     } catch (err) {
         next(err)
     }
