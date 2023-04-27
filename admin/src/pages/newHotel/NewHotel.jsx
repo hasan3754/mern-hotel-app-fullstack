@@ -4,7 +4,7 @@ import Navbar from "../../components/navbar/Navbar";
 import DriveFolderUploadOutlinedIcon from "@mui/icons-material/DriveFolderUploadOutlined";
 import { useState } from "react";
 import { hotelInputs } from "../../formSource";
-import { useFetch } from "../../hooks/useFetch";
+import useFetch from '../../hooks/useFetch'
 import axios from "axios";
 
 const NewHotel = () => {

@@ -8,7 +8,7 @@ import { productInputs, userInputs } from "./formSource";
 import "./style/dark.scss";
 import { useContext } from "react";
 import { DarkModeContext } from "./context/darkModeContext";
-import { AuthContext } from "../../client/src/context/AuthContext";
+import { AuthContext } from "../../admin/src/context/AuthContext";
 import { hotelColumns, roomColumns, userColumns } from "./datatablesource";
 import newHotel from "./pages/newHotel/NewHotel";
 import newRoom from "./pages/newRoom/newRoom";

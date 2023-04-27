@@ -10,7 +10,7 @@ router.post("/:hotelid", verifyAdmin, createRoom)
 //UPDATE
 
 router.put("/:id",verifyAdmin, updateRoom)
-router.put("avaibility/:id", updateRoomAvailability)
+router.put("/availability/:id", updateRoomAvailability)
 
 //delete
 router.delete("/:id/:hotelId",verifyAdmin, deleteRoom)

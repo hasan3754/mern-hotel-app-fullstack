@@ -3,8 +3,8 @@ import Sidebar from "../../components/sidebar/Sidebar";
 import Navbar from "../../components/navbar/Navbar";
 import DriveFolderUploadOutlinedIcon from "@mui/icons-material/DriveFolderUploadOutlined";
 import { useState } from "react";
-import { roomInputs } from "../../datatablesource";
-import { useFetch } from "../../hooks/useFetch";
+import { roomColumns } from "../../datatablesource";
+import useFetch from '../../hooks/useFetch';
 import axios from "axios";
 
 const NewRoom = () => {
@@ -41,7 +41,7 @@ const NewRoom = () => {
         <div className="bottom">
           <div className="right">
             <form>
-              {roomInputs.map((input) => (
+              {roomColumns.map((input) => (
                 <div className="formInput" key={input.id}>
                   <label>{input.label}</label>
                   <input id={input.id} onChange={handleChange} type={input.type} placeholder={input.placeholder} />
@@ -57,7 +57,7 @@ const NewRoom = () => {
                   <label>Choose a hotel</label>
                   <select id="hotelId" onChange={e => setHotelId(e.target.value)} >
                     { loading ? "loading" : data && data.map(hotel => (
-                      <option value={hotel._id}>{hotel.name}</option>
+                      <option key={hotel._id}>{hotel.name}</option>
                     )) }
                   </select>
                 </div>

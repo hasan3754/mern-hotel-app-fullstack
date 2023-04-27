@@ -43,6 +43,7 @@ export const updateRoomAvailability = async (req, res, next) => {
                 }
             }
         )
+        res.status(200).json("Room status has been updated")
     } catch (err) {
         next(err)
     }

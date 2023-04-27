@@ -4,7 +4,7 @@ import { userColumns, userRows } from "../../datatablesource";
 import { Link, useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from 'axios';
-import useFetch from "../../hooks/useFetch"
+import useFetch from '../../hooks/useFetch'
 
 const Datatable = ({columns}) => {
   const location = useLocation()
